@@ -1,0 +1,641 @@
+Day1_Class,method,object
+
+QUESTION 1:
+------------
+     Project   :EmployeeDetails
+     Package   :org.emp
+     Class     :Employee 
+     Methods   :empId(),empName(),empDob(),empPhone(),empEmail(),empAddress()
+
+Description:
+Create an object for employee class and call above methods also follow the all coding standards.
+
+package org.emp;
+
+public class Employee {
+	public void empId() {
+		System.out.println("Employee Id is: 12234");
+	}
+	public void empName() {
+		System.out.println("Employee Name is: Praveen");
+	}
+	public void empDob() {
+		System.out.println("Employee DOB is: 03 NOV 1994");
+	}
+	public void empPhone() {
+		System.out.println("Employee Phone is: 09629822005");
+	}
+	public void empEmail() {
+		System.out.println("Employee Mail Id is: praveenvlr3@gmail.com");
+	}
+	public void empAddress() {
+		System.out.println("Employee Address is: 1/111 Big Street, Puttuthakku vellore");
+	}
+	public static void main(String[] args) {
+		Employee dataBase = new Employee();
+		dataBase.empId();
+		dataBase.empName();
+		dataBase.empDob();
+		dataBase.empPhone();
+		dataBase.empEmail();
+		dataBase.empAddress();
+	}
+
+}
+
+
+QUESTION 2: 
+-------------
+
+     Project   :GreensAddress
+     Package   :org.add
+     Class     :GreensTech
+     Methods   :greensOmr(),greensAdayar(),greensTambaram(),greensVelacherry(),greensAnnaNagar()
+
+Description:
+Create an object for GreensTech class and call above methods also follow the all coding standards.
+
+package org.add;
+
+public class GreensTech {
+	public void greensOmr() {
+		System.out.println("Greens OMR Address is: 19, Rajiv Gandhi Salai, Thoraipakkam, TN");
+	}
+	public void greensAdayar() {
+		System.out.println("Greens Adayar Address is: 11, First street, Padmanabha, Adayar, Chennai, TN");
+	}
+	public void greensTambaram() {
+		System.out.println("Greens Tambaram Address is: 1, AppaRao colony, Tambaram, Chennai, TN");
+	}
+	public void greensVelachery() {
+		System.out.println("Greens Velachery Address is: 28, Nagendra Nagar, Velachery, Chennai, TN");
+	}
+	public void greensAnnaNagar() {
+		System.out.println("Greens Anna Nagar Address is: 4th Floor, W122, 3rd Ave, W Block, Anna Nagar, Chennai, Tn");
+	}
+	public static void main(String[] args) {
+		GreensTech address = new GreensTech();
+		address.greensOmr();
+		address.greensAdayar();
+		address.greensTambaram();
+		address.greensVelachery();
+		address.greensAnnaNagar();
+	}
+}
+
+
+QUESTION 3:
+------------
+   Project     :CompanyDetails
+   Package     :org.company
+   Class       :CompanyInfo
+   Methods     :companyName(),companyId(),companyAddress()
+
+Description:
+Create an object for CompanyDetails class and call above methods also follow the all coding standards.
+
+package org.company;
+
+public class CompanyInfo {
+	public void CompanyName() {
+		System.out.println("Company Name: NHK Automotive seating Pvt ltd");
+	}
+	public void CompanyId() {
+		System.out.println("Company Id: 12345");
+	}
+	public void CompanyAddress() {
+		System.out.println("Company Address: Oragadam");
+	}
+	public static void main(String[] args) {
+		CompanyInfo company = new CompanyInfo();
+				company.CompanyName();
+		company.CompanyId();
+		company.CompanyAddress();
+
+	}
+}
+
+QUESTION 4:
+-----------
+   Project     :MyPhone
+   Package     :org.phone
+   Class       :PhoneInfo
+   Methods     :phoneName(),phoneMieiNum(),Camera(),storage(),osName()
+
+Description:
+Create an object for PhoneInfo class and call above methods also follow the all coding standards.
+
+package org.phone;
+
+public class PhoneInfo {
+	public void phoneName() {
+		System.out.println("Phone Name: Samsung");
+	}
+	public void phoneMieiNum() {
+		System.out.println("Phone MIEI number: 9876543321122332");
+	}
+	public void camera() {
+		System.out.println("Camera: 64 MP");
+
+	}
+	public void storage() {
+		System.out.println("Storage: 128 GB");
+	}
+	public void osName() {
+		System.out.println("OS Name: Andriod version 10");
+	}
+	public static void main(String[]args) {
+		PhoneInfo phoneSpec = new PhoneInfo();
+		phoneSpec.phoneName();
+		phoneSpec.phoneMieiNum();
+		phoneSpec.camera();
+		phoneSpec.storage();
+		phoneSpec.osName();
+	}
+
+
+}
+
+QUESTION 5:
+------------
+     Project   :LanguageDetails
+     Package   :org.lang
+
+     Class     :LanguageInfo
+     Methods   :tamilLanguage(),englishLanguage(),hindiLanguage()
+
+     Class     :StateDetails
+     Methods   :southIndia(),northIndia()
+
+Description:
+Create an object for LanguageInfo and StateDetails  inside the StateDetails class and call both classes methods also follow the all coding standards.
+
+
+package org.lang;
+
+public class LanguageInfo extends StateDetails{
+	public void tamilLanguage() {
+		System.out.println("South Indian language: Tamil");
+	}
+	public void englishLanguage() {
+		System.out.println("Common Language: English");
+	}
+	public void hindiLanguage() {
+		System.out.println("North Indian Language: Hindi");
+	}
+	public static void main(String[] args) {
+		LanguageInfo lan = new LanguageInfo();
+		lan.southIndia();
+		lan.tamilLanguage();
+		lan.northIndia();
+		lan.hindiLanguage();
+		lan.englishLanguage();
+	}
+}
+
+package org.lang;
+
+public class StateDetails {
+	public void southIndia() {
+		System.out.println("South Indian");
+	}
+	public void northIndia() {
+		System.out.println("North Indian");
+	}
+}
+
+QUESTION 6:
+-----------
+     Project   :EmployeeInformation
+     Package   :org.emp
+     Class     :Employee
+     Methods   :empName()
+
+     Package   :org.company
+     Class     :Company
+     Methods   :companyName()
+
+     Package   :org.client
+     Class     :Client
+     Methods   :clientName()
+
+     Package   :org.project
+     Class     :Project
+     Methods   :projectName()
+
+Description:
+Create an object for all 4 classes  inside the Employee class and call all classes methods also follow the all coding standards.
+
+package org.emp;
+import org.company.Company;
+import org.client.Client;
+import org.project.Project;
+
+public class Employee {
+	public void empName() {
+		System.out.println("Employee Name: Praveen");	
+	}
+	public static void main(String[] args) {
+		Employee employee = new Employee();
+		employee.empName();
+		Company company = new Company();
+		company.companyName();
+		Client client = new Client();
+		client.clientName();
+		Project project = new Project();
+		project.projectName();
+	}
+}
+
+
+package org.company;
+
+public class Company {
+	public void companyName() {
+		System.out.println("Company Name: NHK Automotive Seating pvt ltd");
+	}
+}
+
+package org.client;
+
+public class Client {
+	public void clientName(){
+		System.out.println("Client Name: RNAIPL");
+	}
+}
+
+package org.project;
+
+public class Project {
+	public void projectName() {
+		System.out.println("Project Name: XBB & XBA");
+	}
+}
+
+
+QUESTION 7:
+-------------
+     Project   :PhoneDetails
+     Package   :org.phone
+     Class     :ExternalStorage
+     Methods   :size()
+
+     Class     :InternalStorage
+     Methods   :processorName(),ramSize()
+
+Description:
+Create an object for ExternalStorage and InternalStorage inside the InternalStorage class and call both classes methods also follow the all coding standards.
+
+package org.phone;
+
+public class InternalStorage {
+	public void processorName() {
+		System.out.println("Processor Name: Octa");
+	}
+	public void ramSize() {
+		System.out.println("Ram Size: 64GB");
+	}
+	public void main (String[] args) {
+		InternalStorage internal = new InternalStorage();
+		internal.processorName();
+		internal.ramSize();
+		ExternalStorage external =new ExternalStorage();
+		external.size();
+	}
+
+}
+
+
+package org.phone;
+
+public class ExternalStorage {
+	public void size() {
+		System.out.println("External Storage Size: 256GB expandable");
+	}
+
+}
+
+QUESTION 8:
+------------
+     Project   :CollegeInformation
+     Package   :org.college
+     Class     :College
+     Methods   :collegeName(),collegeCode(),collegeRank()
+
+     Class     :Student
+     Methods   :studentName(),studentDept(),studentId()
+
+     Class     :Hostel
+     Methods   :hostelName()
+
+     Class     :Dept
+     Methods   :deptName()
+
+Description:
+Create an object for all 4 classes  inside the College class and call all classes methods also follow the all coding standards.
+
+package org.college;
+
+public class College {
+	public void collegeName() {
+		System.out.println("Annai Mira College of engineering & Technology");
+	}
+	public void collegeCode() {
+		System.out.println("College Code: 1137");
+	}
+	public void collegeRank() {
+		System.out.println("College Rank: 1");
+	}
+	public void main(String[] args) {
+		College college = new College();
+		college.collegeName();
+		college.collegeCode();
+		college.collegeRank();
+		Student student = new Student();
+		student.studentName();
+		student.studentId();
+		student.studentDept();
+		Hostel hostel = new Hostel();
+		hostel.hostelName();
+		Dept dept = new Dept();
+		dept.deptName();
+	}
+}
+
+
+package org.college;
+
+public class Student {
+	public void studentName() {
+		System.out.println("Student Name: Praveen");
+	}
+	public void studentDept() {
+		System.out.println("Student dept: Mech");
+	}
+	public void studentId() {
+		System.out.println("Student Id: 513512114022");
+	}
+}
+
+package org.college;
+
+public class Hostel {
+	public void hostelName() {
+		System.out.println("Hostel Name: Rajaram");
+	}
+}
+
+
+package org.college;
+
+public class Dept {
+	public void deptName() {
+		System.out.println("Department Name: Mech");
+	}
+}
+
+
+QUESTION 9:
+------------
+     Project   :VehicleInformation
+     Package   :org.allvehicle
+     Class     :Vehicle
+     Methods   :VehicleNecessery()
+
+     Package   :org.twowheeler
+     Class     :TwoWheller
+     Methods   :bike(),cycle()
+
+     Package   :org.threewheeler
+     Class     :ThreeWheeler
+     Methods   :Auto()
+
+     Package   :org.fourwheeler
+     Class     :FourWheeler
+     Methods   :car(),bus(),lorry()
+
+Description:
+Create an object for all 4 classes  inside the Vehicle class and call all classes methods also follow the all coding standards.
+
+
+package org.allvehicle;
+import org.twowheler.TwoWheeler;
+import org.threewheeler.ThreeWheeler;
+import org.fourwheeler.FourWheeler;
+
+
+public class Vehicle {
+	public void vehicleNecessery() {
+		System.out.println("Vehicle Necessery");
+	}
+	public void main (String[] args) {
+		Vehicle vehicle = new Vehicle();
+		vehicle.vehicleNecessery();
+		TwoWheeler twowheeler = new TwoWheeler();
+		twowheeler.bike();
+		twowheeler.cycle();
+		ThreeWheeler threewheeler = new ThreeWheeler();
+		threewheeler.auto();
+		FourWheeler fourwheeler = new FourWheeler();
+		fourwheeler.bus();
+		fourwheeler.car();
+		fourwheeler.lorry();
+	}
+
+}
+
+package org.twowheler;
+
+public class TwoWheeler {
+	public void bike() {
+		System.out.println("Two Wheeler: Bike");
+	}
+	public void cycle() {
+		System.out.println("Two wheeler: Cycle");
+	}
+}
+
+
+package org.threewheeler;
+
+public class ThreeWheeler {
+	public void auto() {
+		System.out.println("Three wheeler: Auto");
+	}
+}
+
+
+package org.fourwheeler;
+
+public class FourWheeler {
+	public void car() {
+		System.out.println("Four Wheeler: Car");
+	}
+	public void bus() {
+		System.out.println("Four Wheeler: Bus");
+	}
+	public void lorry() {
+		System.out.println("Four wheeler: Lorry");
+	}
+}
+
+
+QUESTION 10:
+--------------
+     Project   :TransportInformation
+     Package   :org.transport
+     Class     :Transport
+     Methods   :TransportForm
+     
+     Package   :org.road
+     Class     :Road
+     Methods   :bike(),cycle(),bus(),car()
+
+     Package   :org.air
+     Class     :Air
+     Methods   :aeroPlane(),heliCopter()
+
+     Package   :org.water
+     Class     :Water
+     Methods   :boat(),ship()
+
+Description:
+Create an object for all 4 classes  inside the Transport class and call all classes methods also follow the all coding standards. 
+
+
+package org.transport;
+import org.road.Road;
+import org.air.Air;
+import org.water.Water;
+
+public class Transport {
+	public void TransportForm() {
+		System.out.println("Transport form");
+	}
+	public void main (String[]args) {
+		Transport transport = new Transport();
+		transport.TransportForm();
+		Road road = new Road();
+		road.bike();
+		road.cycle();
+		road.bus();
+		road.car();
+		Air air = new Air();
+		air.aeroPlane();
+		air.heliCopter();
+		Water water = new Water();
+		water.boat();
+		water.ship();
+	}
+}
+
+
+package org.road;
+
+public class Road {
+	public void bike() {
+		System.out.println("Road vehicle: Bike");
+	}
+	public void cycle() {
+		System.out.println("Road vehicle: cycle");
+	}
+	public void bus() {
+		System.out.println("Road Vehicle: Bus");
+	}
+	public void car() {
+		System.out.println("Road Vehicle: Car");
+	}
+}
+
+
+
+package org.air;
+
+public class Air {
+	public void aeroPlane() {
+		System.out.println("Flying Vehicle: Aeroplane");
+	}
+	public void heliCopter() {
+		System.out.println("Flying vehicle: Heroplane");
+	}
+}
+
+
+package org.water;
+
+public class Water {
+	public void boat() {
+		System.out.println("Water travel vehicle: Boat");
+	}
+	public void ship() {
+		System.out.println("Water travel vechile: ship");
+	}
+}
+
+
+QUESTION 11:
+--------------
+     Project   :NetworkInformation
+     Package   :org.network
+     Class     :Wifi
+     Methods   :wifiName()
+
+     Class     :MobileData
+     Methods   :dataName()
+
+     Class     :Lan
+     Methods   :lanName()
+
+     Class     :Wireless
+     Methods   :modamName()
+
+Description:
+Create an object for all 4 classes  inside the Wifi class and call all classes methods also follow the all coding standards.
+
+
+package org.network;
+
+public class Wifi {
+	public void wifiName() {
+		System.out.println("Wifi name: Praveenvlr3");
+	}
+	public void main (String[] args) {
+		Wifi wifi = new Wifi();
+		wifi.wifiName();
+		MobileData mobiledata = new MobileData();
+		mobiledata.dataName();
+		Lan lan = new Lan();
+		lan.lanName();
+		Wireless wireless = new Wireless();
+		wireless.modamName();
+	}
+}
+
+
+
+package org.network;
+
+public class MobileData {
+	public void dataName(){
+		System.out.println("Data Name: Airtel");
+	}
+}
+
+
+package org.network;
+
+public class Lan {
+	public void lanName() {
+		System.out.println("Lan name: Airtel India");
+	}
+}
+
+package org.network;
+
+public class Wireless {
+	public void modamName() {
+		System.out.println("Modam Name: SSID");
+	}
+}
+
+
